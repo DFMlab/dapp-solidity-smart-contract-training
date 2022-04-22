@@ -4,7 +4,7 @@
 /**
  * @title Hello World Solidity Smart Contract
  * @dev A Simple Hello World Solidity Smart Contract
- * for demonstrating array.
+ * for demonstrating array and overloading.
  * @author Decentralized Future in Motion Lab Limited
  */
 
