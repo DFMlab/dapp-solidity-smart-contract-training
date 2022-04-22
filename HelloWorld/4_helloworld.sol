@@ -41,15 +41,35 @@ contract HelloWorld {
     /// @dev a function that gets the state variable ids.
     /// This is a public function can be called internally and externally.
     /// a view function will not modify the state of the blockchain
+    /// @return uint8 [] memory
     function getIds() public view returns (uint8[] memory) {
         return _ids;
+    }
+
+    /// @notice a function that gets the ids
+    /// @dev a function that gets the state variable ids.
+    /// This is a public function can be called internally and externally.
+    /// a view function will not modify the state of the blockchain
+    /// @return uint8 [] memory
+    function getIds(uint8 id) public view returns (uint8) {
+        return _ids[id];
     }
 
     /// @notice a function that gets the oids
     /// @dev a function that gets the state variable oids.
     /// This is a public function can be called internally and externally.
     /// a view function will not modify the state of the blockchain
+    /// @return uint8 [] memory
     function getOids() public view returns (uint8[2] memory) {
         return _oids;
+    }
+
+    /// @notice a function that gets the oids
+    /// @dev a function that gets the state variable oids.
+    /// This is a public function can be called internally and externally.
+    /// a view function will not modify the state of the blockchain
+    /// @return uint8 [] memory
+    function getOids(uint8 id) public view returns (uint8) {
+        return _oids[id];
     }
 }
