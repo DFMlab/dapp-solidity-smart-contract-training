@@ -21,6 +21,8 @@ contract HelloWorld {
         _amount = amount; // amount is a local variable
     }
 
+    // return the amount
+    // a view function will not modify any state variable
     function getAmount() public view returns(uint256) {
         return _amount;
     }
