@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-// Decentralized Future in Motion Training Contracts v0.0.1 (HelloWorld/1_helloworld.sol)
+// Decentralized Future in Motion Limited Training Contracts v0.0.1 (HelloWorld/1_helloworld.sol)
 
 /**
  * @title Hello World Solidity Smart Contract
@@ -18,7 +18,7 @@ contract HelloWorld {
     // a public function uses more gas than external
     // a public function can be called internally and externally
     function setAmount(uint amount) public {
-        _amount = amount;
+        _amount = amount; // amount is a local variable
     }
 
     function getAmount() public view returns(uint256) {
