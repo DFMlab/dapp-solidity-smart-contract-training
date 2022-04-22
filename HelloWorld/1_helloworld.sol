@@ -3,7 +3,7 @@
 
 /**
  * @title Hello World Solidity Smart Contract
- * @dev A Simple Hello World Solidity Smart Contract 
+ * @dev A Simple Hello World Solidity Smart Contract
  * for demonstrating set and get function.
  * @author Decentralized Future in Motion Lab Limited
  */
@@ -11,16 +11,15 @@
 pragma solidity ^0.8.3;
 
 contract HelloWorld {
-
     /// @notice A variable that holds the amount
     /// @dev A state variable that holds an integer value (amount)
     uint256 _amount;
-    
+
     /// @notice a function that sets the amount on blockchain
     /// @dev a function that sets the state variable amount.
     /// This is a public function can be called internally and externally
     /// @param amount the value to be set
-    function setAmount(uint amount) public {
+    function setAmount(uint256 amount) public {
         _amount = amount; // amount is a local variable
     }
 
@@ -29,8 +28,7 @@ contract HelloWorld {
     /// This is a public function can be called internally and externally.
     /// a view function will not modify the state of the blockchain
     /// @return uint256 from the state variable that
-    function getAmount() public view returns(uint256) {
+    function getAmount() public view returns (uint256) {
         return _amount;
     }
-
 }

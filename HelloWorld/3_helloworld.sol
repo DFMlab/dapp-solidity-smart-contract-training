@@ -3,7 +3,7 @@
 
 /**
  * @title Hello World Solidity Smart Contract
- * @dev A Simple Hello World Solidity Smart Contract 
+ * @dev A Simple Hello World Solidity Smart Contract
  * for demonstrating public visibility and bool.
  * @author Decentralized Future in Motion Lab Limited
  */
@@ -11,7 +11,6 @@
 pragma solidity ^0.8.3;
 
 contract HelloWorld {
-
     uint256 _amount;
 
     /// @notice A variable that holds the name
@@ -30,13 +29,11 @@ contract HelloWorld {
         _active = active; // local variable
     }
 
-   
-    function setAmount(uint amount) public {
+    function setAmount(uint256 amount) public {
         _amount = amount; // amount is a local variable
     }
 
-    function getAmount() public view returns(uint256) {
+    function getAmount() public view returns (uint256) {
         return _amount;
     }
-
 }

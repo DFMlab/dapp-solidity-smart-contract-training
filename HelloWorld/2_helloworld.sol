@@ -3,7 +3,7 @@
 
 /**
  * @title Hello World Solidity Smart Contract
- * @dev A Simple Hello World Solidity Smart Contract 
+ * @dev A Simple Hello World Solidity Smart Contract
  * for demonstrating constructor and str memory.
  * @author Decentralized Future in Motion Lab Limited
  */
@@ -11,7 +11,6 @@
 pragma solidity ^0.8.3;
 
 contract HelloWorld {
-
     uint256 _amount;
 
     /// @notice A variable that holds the name
@@ -21,7 +20,7 @@ contract HelloWorld {
     /// @notice The constructor is a function that is called when the contract is first deployed
     /// @dev a constructor to initialize the name variable
     /// @param name the name is a local variable help in the memory
-   constructor(string memory name) {
+    constructor(string memory name) {
         _name = name; // local variable
     }
 
@@ -29,19 +28,16 @@ contract HelloWorld {
     /// @dev a function that gets the state variable name.
     /// This is a public function can be called internally and externally.
     /// a view function will not modify the state of the blockchain
-    /// @return string memory from the state variable that    
-    function getName() public view returns(string memory) {
+    /// @return string memory from the state variable that
+    function getName() public view returns (string memory) {
         return _name;
     }
 
-
-    function setAmount(uint amount) public {
+    function setAmount(uint256 amount) public {
         _amount = amount; // amount is a local variable
     }
 
-
-    function getAmount() public view returns(uint256) {
+    function getAmount() public view returns (uint256) {
         return _amount;
     }
-
 }
