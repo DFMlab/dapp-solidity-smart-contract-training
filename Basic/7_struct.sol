@@ -48,7 +48,22 @@ contract Struct {
         _products[_products.length].image = image;
     }
 
+    /// @notice a function that gets the product variable from the blocktime
+    /// @dev a function that gets the state variable product.
+    /// This is a public function can be called internally and externally.
+    /// a view function will not modify the state of the blockchain
+    /// @return Product the product structure
     function getProduct() public view returns (Product memory) {
         return _product;
+    }
+
+    /// @notice a function that gets a product by id from the blocktime
+    /// @dev a function that gets a product by id.
+    /// This is a public function can be called internally and externally.
+    /// a view function will not modify the state of the blockchain
+    /// @param id the id of the product
+    /// @return Product the product structure
+    function getProduct(uint256 id) public view returns (Product memory) {
+        return _products[id];
     }
 }
