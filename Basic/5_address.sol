@@ -10,7 +10,7 @@
 
 pragma solidity ^0.8.3;
 
-contract HelloWorld {
+contract Address {
     /// @notice A variable that holds the owner address
     /// @dev A state variable that holds an string address (address)
     /// This address can not receive ether

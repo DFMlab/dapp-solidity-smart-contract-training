@@ -10,7 +10,7 @@
 
 pragma solidity ^0.8.3;
 
-contract HelloWorld {
+contract String {
     uint256 _amount;
 
     /// @notice A variable that holds the name

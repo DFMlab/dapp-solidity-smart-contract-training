@@ -10,7 +10,7 @@
 
 pragma solidity ^0.8.3;
 
-contract HelloWorld {
+contract Integer {
     /// @notice A variable that holds the amount
     /// @dev A state variable that holds an integer value (amount)
     uint256 _amount;

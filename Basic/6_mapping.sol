@@ -10,7 +10,7 @@
 
 pragma solidity ^0.8.3;
 
-contract HelloWorld {
+contract Mapping {
     /// @notice  A variable that holds the balances of each address
     /// @dev A state variable that maps addresses to balance
     mapping(address => uint256) _balances;

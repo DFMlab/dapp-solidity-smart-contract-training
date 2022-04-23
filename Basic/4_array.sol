@@ -10,7 +10,7 @@
 
 pragma solidity ^0.8.3;
 
-contract HelloWorld {
+contract Array {
     /// @notice A variable that holds the ids
     /// @dev A state variable that holds an array of uint8 values (ids)
     /// this is a variable length array
