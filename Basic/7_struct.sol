@@ -35,7 +35,7 @@ contract Struct {
     /// @dev A variable that holds an array of products
     Product[] _products;
 
-    function setProduct(
+    function addProduct(
         address owner,
         uint256 price,
         string memory title,
