@@ -40,12 +40,12 @@ contract Payable {
     // a payable function will require certain amount of wei (fraction of a coin) to be sent with it
     // a 10^18 wei == 1 ether
     function donate() public payable {
-        Contribution contribution = Contribution(
+        Contribution memory contribution = Contribution(
             msg.sender,
             msg.value,
             block.timestamp
         );
-        _contributions.push();
+        _contributions.push(contribution);
     }
 
     /// @notice a function that withdraws wei from the crowfunding contract
