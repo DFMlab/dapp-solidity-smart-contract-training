@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-3.0-only
-// Decentralized Future in Motion Limited Training Contracts v0.0.1 (Basic/13_require.sol)
+// Decentralized Future in Motion Limited Training Contracts v0.0.1 (Basic/1_constant.sol)
 
 /**
  * @title A Simple Solidity Smart Contract
  * @dev A Simple Solidity Smart Contract
- * for demonstrating require.
+ * for demonstrating constant.
  * @author Decentralized Future in Motion Lab Limited
  */
 pragma solidity ^0.8.3;
@@ -24,7 +24,7 @@ contract Visibiility {
 
     /// @dev A constant variable can not be re-assigned
     uint256 constant public minimumDonation = 1*10**10;
-    
+
     /// @dev A constant variable can not be re-assigned
     uint256 constant public maximumDonation = 1*10**19;
 

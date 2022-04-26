@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-3.0-only
-// Decentralized Future in Motion Limited Training Contracts v0.0.1 (Basic/13_require.sol)
+// Decentralized Future in Motion Limited Training Contracts v0.0.1 (Intermediate/0_visibility.sol)
 
 /**
  * @title A Simple Solidity Smart Contract
  * @dev A Simple Solidity Smart Contract
- * for demonstrating require.
+ * for demonstrating visibility.
  * @author Decentralized Future in Motion Lab Limited
  */
 pragma solidity ^0.8.3;
