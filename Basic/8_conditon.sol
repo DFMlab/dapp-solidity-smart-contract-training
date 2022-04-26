@@ -20,15 +20,27 @@ contract Condition {
 
     /// @notice A variable that holds multiple products
     /// @dev A variable that holds an array of products
-    Product[] _exclusive;
+    mapping(uint256 => Product) _exclusive;
+
+    /// @notice Number of products in exclusive
+    /// @dev A variable that holds the number of products in exclusive
+    uint256 _exclusiveCount = 0;
 
     /// @notice A variable that holds multiple products
     /// @dev A variable that holds an array of products
-    Product[] _products;
+    mapping(uint256 => Product) _products;
+
+    /// @notice Number of products in product variable
+    /// @dev A variable that holds the number of products in exclusive
+    uint256 _productsCount = 0;
 
     /// @notice A variable that holds multiple products
     /// @dev A variable that holds an array of products
-    Product[] _sales;
+    mapping(uint256 => Product) _sales;
+
+    /// @notice Number of products in exclusive
+    /// @dev A variable that holds the number of products in exclusive
+    uint256 _salesCount = 0;
 
     function addProduct(
         address owner,
@@ -38,11 +50,14 @@ contract Condition {
         uint8 _type
     ) public {
         if (_type == 0) {
-            _exclusive.push(Product(owner, price, title, image));
+            _exclusive[_exclusiveCount] = Product(owner, price, title, image);
+            _exclusiveCount++;
         } else if (_type == 1) {
-            _sales.push(Product(owner, price, title, image));
+            _sales[_salesCount] = Product(owner, price, title, image);
+            _salesCount++;
         } else {
-            _products.push(Product(owner, price, title, image));
+            _products[_productsCount] = Product(owner, price, title, image);
+            _productsCount++;
         }
     }
 
@@ -52,9 +67,9 @@ contract Condition {
         returns (Product memory)
     {
         if (_type == 0) {
-            return _products[id];
+            return _exclusive[id];
         } else if (_type == 1) {
-            return _products[id];
+            return _sales[id];
         } else {
             return _products[id];
         }
