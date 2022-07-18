@@ -5,6 +5,7 @@ pragma solidity >=0.7.0 <0.9.0;
 contract TreeProject {
 
     struct Tree {
+        uint256 id;
         uint256 price;
         address payable owner;
         string image;
@@ -12,9 +13,10 @@ contract TreeProject {
 
     mapping(uint256 => Tree) public _trees;
 
-    uint256 _treeCount;
+    uint256 public _treeCount;
 
     function addTree(uint256 price, string memory image) external {
+        _trees[_treeCount].id = _treeCount;
         _trees[_treeCount].price = price;
         _trees[_treeCount].owner = payable(msg.sender);
         _trees[_treeCount].image = image;
