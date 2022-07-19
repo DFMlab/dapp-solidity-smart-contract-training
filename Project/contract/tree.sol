@@ -27,7 +27,7 @@ contract TreeProject {
         require(msg.value == _trees[id].price, "invalid amount");
         _trees[id].owner.transfer(msg.value);
         _trees[id].owner = payable(msg.sender);
-        _trees[id].price +=  _trees[id].price / 10; 
+        _trees[id].price +=  _trees[id].price / 5; 
     }
 
 }
