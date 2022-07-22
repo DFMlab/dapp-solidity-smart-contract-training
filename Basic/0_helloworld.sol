@@ -14,7 +14,7 @@ pragma solidity ^0.8.3;
 /// @dev Hello World contract
 contract HelloWorld {
 
-    function helloWorld() public pure returns(str) {
+    function helloWorld() public view returns(str) {
         return "hello world";
     }
 
