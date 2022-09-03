@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 // Decentralized Future in Motion Limited Training Contracts v0.0.1 (Basic/0_helloworld.sol)
+// buggy contract
 
 /**
  * @title A Simple Hello World Solidity Smart Contract
