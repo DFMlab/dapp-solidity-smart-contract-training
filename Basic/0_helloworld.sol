@@ -12,10 +12,11 @@ pragma solidity ^0.8.3;
 
 /// @title Hello World contract very similar to classes in C and C++
 /// @dev Hello World contract
-contract HelloWorld {
 
-    function helloWorld() public pure returns(str) {
-        return "hello world";
+contract HelloWorld {
+ string hello = "hello world";
+    function helloWorld() public view returns(string memory) {
+        return hello;
     }
 
 }
